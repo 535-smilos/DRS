@@ -15,7 +15,8 @@ public class TredBrojac extends Thread{
 			
 			//this.b.increment();
 			
-			/*if(this.id==0) {
+			/*
+			if(this.id==0) {
 				this.b.increment();
 			}
 			else {

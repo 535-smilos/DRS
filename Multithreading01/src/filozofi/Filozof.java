@@ -14,20 +14,22 @@ public class Filozof extends Thread{
 	public void run() {
 		while(true) {
 			System.out.println(this.ime+" filozofira.");
-			/*try {
+			try {
 				sleep(3000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}*/
-			this.lijeva.uzmi();
+			}
+			this.lijeva.uzmiLijevu();
 			try {
-				sleep(1);
+				sleep(10);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			this.desna.uzmi();
+			if(!this.desna.uzmiDesnu()) {
+			
+			}
 			System.out.println(this.ime+" jede.");
 			try {
 				sleep(1000);
